@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magzine</title>
+    <link rel="icon" type="image/png" href="title.png"/>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body{
+        margin: auto;
+        font-family: Arial;
+        background-color:white;
+    }
+
+  
+        
+@media screen and (max-width:50%) {
+    .row, .update {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    ul li {
+        float: none;
+        width: 100%;
+    }
+    .nav{
+        position:static;
+    }
+    .video1 video{
+        width:100%;
+            height:auto;
+    }
+}
+         .footer{
+            background-color:#303030;
+            padding: 20px;
+            text-align: center;
+             font-size:20px;
+             color:white;
+        }
+       
+        
+    </style></head>
+<body>
+
+   <!-- <div class="header"><h1><i class="fa fa-chevron-right"></i>Magazine...</h1>
+    </div>-->
+<div class="nav">
+<ul class="main-navigation">
+  <li><a href="magazine.html"><i class="fa fa-home"></i></a></li>
+    <li><a href="#"><i class="fa fa-search"></i></a></li>
+    <li><a href="css/gallery.html">GALLERY</a></li>
+    <li><a href="#">EVENTS</a></li>
+  <li><a href="#">PAPER</a>
+    <ul>
+      <li><a href="css/1stYear.html">1st Year</a></li>
+      <li><a href="#">CSE</a>
+        <ul>
+          <li><a href="css/CSE2nd.html">2nd Year</a></li>
+          <li><a href="css/CSE3rd.html">3rd Year</a></li>
+        </ul>
+      </li>
+      <li><a href="#">ECE</a>
+        <ul>
+          <li><a href="css/ECE2nd.html">2nd Year</a></li>
+          <li><a href="css/ECE3rd.html">3rd Year</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+ <div class="right">
+    <button class="btn2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"> Login</button>
+     <button class="btn2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> SignUp</button>
+
+</div>
+    </ul>
+</div>
+    
+
+
+<div id="id01" class="modal">
+  <div class="modal-content animate ">
+  <form  method="POST" action="http://localhost:602/dashboard/project/reg.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="css/avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        
+    UserName<input type="text" name="name"  required><br>
+    E-mail <input type="text" name="email" required><br>
+
+    Password <input type="password" name="pass1" required>
+    <br><br>
+    Confirm Password <input type="password" name="pass2" required>
+    <br><br>
+    <button class="btn1" type="submit" name="" value="Submit">Sign up</button>
+    <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+          
+        
+    </div>
+
+    
+  </form>
+ </div>
+
+</div>
+<script>
+// Get the modal
+var modals = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modals) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+    
+    <div id="id02" class="modal">
+  <div class="modal-content animate ">
+  <form  method="POST" action="http://localhost:602/dashboard/project/log.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="css/avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        
+    UserName<input type="text" name="name"  required>
+    <br><br>
+    E-mail <input type="text" name="email" required><br>
+
+    Password <input type="password" name="pass" required>
+    <br><br>
+    <button class="btn1" type="submit" name="login_user" value="Submit">Login</button>
+    <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+          
+        
+    </div>
+
+    
+  </form>
+ </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+    
+<div class="parallax">    <div class="home">           <span>COMING SOON...       </span>
+        <hr style="margin-left: 0%; width:50%">
+        <span style="font-size: 15px;"><p id="demo"></p></span>
+        <p id="demo" style="font-size:50px"></p>
+        </div>
+</div>
+<div class="row2" >
+    <div class="E1"> 
+        <h2><a href="#">26-29 Sept</a></h2>
+        <h3 style="font-family: monospace;">Avishkar</h3>
+    </div>
+    <div class="E2"> 
+        <h2><a href="#">26-29 Sept</a></h2>
+        <h2><a href="#">GnoTalks</a></h2>
+       
+    </div>
+    <div class="E3"> 
+        <h2><a href="#">26-28 Oct</a></h2>
+        <h3 style="font-family: monospace;">Atheletic Meet</h3>
+    </div>
+    
+</div>
+        
+    
+<div class="row">
+  
+    <div class="card" style="padding-top:70px;">
+        
+        <div class="video1">
+            
+            
+            <video id="myVideo"  width="45%" muted autoplay >
+            <source src="mnnit.MP4" type="video/MP4">
+            </video>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+            <script>
+            var video1 = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+
+            function myFunction() {
+              if (video1.paused) {
+                video1.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video1.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+           
+            </script>
+            <video id="MNNIT" width="45%"muted autoplay>
+            <source src="MNNIT.MKV" type="video/MP4">
+            </video>
+            <button id="myBtn2" onclick="myFunction2()">Pause</button>
+            <script>
+            var video = document.getElementById("MNNIT");
+            var btn1 = document.getElementById("myBtn2");
+
+            function myFunction2() {
+              if (video.paused) {
+                video.play();
+                btn1.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn1.innerHTML = "Play";
+              }
+            }</script>
+        </div>
+        </div>
+        <br><br>
+    
+    <div class="update">  
+            <h1 style="padding:10px;font-size: 32px;font-family: monospace;">Updates:</h1>
+            <a href="#">&#9679  Swagat18 photos</a>
+            <a href="#">&#9679  Mid-sem schedule.</a>
+            <a href="#">&#9679  Avishkar18.</a>
+            <a href="#">&#9679  GnoTalks.</a>
+     </div> 
+    
+    
+  </div>
+<div class="subscribe"><div class="sub">
+    <h1 style="font-family: monospace">Contact us:</h1>
+    <h2 style="font-family: monospace">@ 8058803260</h2>
+    <form>
+    <p style="font-family: monospace;font-size:25px;">Subscribe for updates</p>
+    <input type="email" placeholder="Email address"><br>
+    <input type="submit" value="Subscribe"style="font-family:monospace;">
+    </form></div>
+ </div>
+ 
+    
+   
+
+     
+  <div class="footer">
+    <p>Copyright 2018-2021.</p>
+      <p>Some rights reserved by Vivek and Ardhya.</p>
+  </div>
+    <script>
+    // Set the date we're counting down to
+var countDownDate = new Date("Sept 26, 2018 12:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    
+}, 1000);</script>
+
+   
+
+     
+</body>
+
+
+</html>
