@@ -1,0 +1,44 @@
+.topnav{
+        overflow:hidden;
+        background-color:darkcyan;
+        position:sticky;
+        top:0px;
+        opacity: 0.8;
+    }
+    .topnav a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 25px;
+    }
+    .topnav a:hover{
+        background-color: aliceblue;
+        color: black;
+    }
+    
+.cardheader{
+    background-color:darkcyan;
+    height:50px;
+    padding:1px;
+    text-align: center;
+    
+}
+        .uu {
+            
+            padding: 0;
+            margin: 0px;
+            overflow:visible;
+            font-size: 17px;
+            
+            }
+.uu ll a{
+    text-decoration: none;
+}
+.uu ll a:hover{
+    color:darkcyan;
+}
+   

@@ -1,0 +1,166 @@
+<!DOCKTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 2nd year</title>
+    
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="paper_layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vertical.css">
+</head>
+<body>
+<div class="nav">
+    <ul class="main-navigation">
+     <li><a href="magazine.html"><i class="fa fa-home"></i></a></li>
+    <li><a href="#"><i class="fa fa-search"></i></a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Events</a></li>
+ <li><a href="#">ExamPapers</a>
+    <ul>
+      <li><a href="1stYear.html">1st YEAR</a></li>
+      <li><a href="#">CSE</a>
+        <ul>
+          <li><a href="CSE2nd.html">2nd Year</a></li>
+          <li><a href="CSE3rd.html">3rd YEAR</a></li>
+        </ul>
+      </li>
+      <li><a href="#">ECE</a>
+        <ul>
+          <li><a href="ECE2nd.html">2nd YEAR</a></li>
+          <li><a href="ECE3rd.html">3rd YEAR</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+    </ul>
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Data Structure</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">OOP</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">FOLT</button>
+</div>
+<div id="London" class="tabcontent">
+    
+        <div class="row1">
+            <div class="col1">
+                <a href="p1.jpeg">
+                <img src="p1.jpeg" ></a>
+            </div>
+            <div class="col1">
+                <a href="p2.jpeg" download>
+                <img src="p2.jpeg"></a>
+            </div>
+            <div class="col1">
+                <a href="p3.jpeg">
+                <img src="p3.jpeg"></a>
+            </div>
+
+        </div>
+            <div class="row1">
+            <div class="col1">
+                <a href="p1.jpeg">
+                <img src="p1.jpeg" ></a>
+            </div>
+            <div class="col1">
+                <a href="p2.jpeg" download>
+                <img src="p2.jpeg"></a>
+            </div>
+            <div class="col1">
+                <a href="p3.jpeg">
+                <img src="p3.jpeg"></a>
+            </div>
+
+        </div>
+</div>
+ 
+
+
+<div id="Paris" class="tabcontent">
+          <div class="row1">
+            <div class="col1">
+                <a href="p1.jpeg">
+                <img src="p1.jpeg" ></a>
+            </div>
+            <div class="col1">
+                <a href="p2.jpeg" download>
+                <img src="p2.jpeg"></a>
+            </div>
+            <div class="col1">
+                <a href="p3.jpeg">
+                <img src="p3.jpeg"></a>
+            </div>
+
+        </div>
+            <div class="row1">
+            <div class="col1">
+                <a href="p1.jpeg">
+                <img src="p1.jpeg" ></a>
+            </div>
+            <div class="col1">
+                <a href="p2.jpeg" download>
+                <img src="p2.jpeg"></a>
+            </div>
+            <div class="col1">
+                <a href="p3.jpeg">
+                <img src="p3.jpeg"></a>
+            </div>
+
+        </div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+        <div class="row1">
+            <div class="col1">
+                <a href="p1.jpeg">
+                <img src="p1.jpeg" ></a>
+            </div>
+            <div class="col1">
+                <a href="p2.jpeg" download>
+                <img src="p2.jpeg"></a>
+            </div>
+            <div class="col1">
+                <a href="p3.jpeg">
+                <img src="p3.jpeg"></a>
+            </div>
+
+        </div>
+            <div class="row1">
+            <div class="col1">
+                <a href="p1.jpeg">
+                <img src="p1.jpeg" ></a>
+            </div>
+            <div class="col1">
+                <a href="p2.jpeg" download>
+                <img src="p2.jpeg"></a>
+            </div>
+            <div class="col1">
+                <a href="p3.jpeg">
+                <img src="p3.jpeg"></a>
+            </div>
+
+        </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

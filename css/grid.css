@@ -1,0 +1,144 @@
+    .header{
+           margin-top: 0px;
+            padding: 30px;
+            text-align: center;
+            background-color:#424242;
+        }
+        .header h1{
+            font-size: 50px;
+            color:whitesmoke;
+        }
+      
+       
+        .column{
+            float:left;
+            overflow:inherit;
+        }
+.row{   background-color: aliceblue;
+}
+
+        
+        .column.right{
+            width:25%;
+            padding-left: 0px;
+        }
+        .row:after{
+            content:"";
+            display:table;
+            clear:both;
+        }
+        .card{
+            background-color:ghostwhite;
+            margin-top:100px;
+            
+           
+    
+        }
+.update a {
+    color:black;
+    text-decoration: none;
+    text-align-last: left;
+    font-family:monospace;
+    font-size:25px;
+    display: block;
+    position:relative;
+    display: block;
+    position:relative;
+    padding:10px;
+}
+         .update{
+            background-color:floralwhite;
+            padding-left:35%;
+             padding-top: 50px;
+             padding-bottom: 50px;
+             
+             
+     }
+
+.video1{
+    margin-left:10%;
+    height:auto;
+    padding-top: 100px; 
+    
+}
+
+.subscribe{
+    background-image:url("18.jpg");
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment:local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.sub{       
+            padding-bottom: 2%;
+            padding-top:2%;
+            text-align: center;
+            color:white;
+            
+}
+.row2{    background-color:darkgrey;
+            height:100%;
+            width=100%; 
+            text-align: center;
+            margin-top: 0;
+            font-family: serif;
+            font-size:20px;
+            color:white;
+        
+}
+.row2 a{
+    text-decoration: none;
+    color:white;
+    font-family: monospace;
+}
+.E1{
+    margin-left:15%;
+    float:left;
+    background-color:#808080;
+    text-align: center;
+    width:24%;
+}
+.E2{
+    float: left;
+    background-color:#404040;
+    text-align: center;
+    width:23.9%;
+}
+.E3{
+    float:left;
+    background-color:#303030;
+    text-align: center;
+    width:24%;
+}
+
+
+input[type=submit],input[type=email]{
+    padding:12px;
+    margin:8px 0;
+    width:40%;
+    display: inline-block;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    background-color:#757575;
+    font-size:25px;
+    color:white;
+    border:none;
+}
+.update a:hover{
+    font-size: 30px;
+}
+ 
+
+.row:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
