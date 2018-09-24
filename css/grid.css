@@ -14,7 +14,7 @@
             float:left;
             overflow:inherit;
         }
-.row{   background-color: aliceblue;
+.row{   background-color:ghostwhite;
 }
 
         
@@ -34,26 +34,8 @@
            
     
         }
-.update a {
-    color:black;
-    text-decoration: none;
-    text-align-last: left;
-    font-family:monospace;
-    font-size:25px;
-    display: block;
-    position:relative;
-    display: block;
-    position:relative;
-    padding:10px;
-}
-         .update{
-            background-color:floralwhite;
-            padding-left:35%;
-             padding-top: 50px;
-             padding-bottom: 50px;
-             
-             
-     }
+
+
 
 .video1{
     margin-left:10%;
@@ -130,6 +112,21 @@ input[type=submit]{
     font-size:25px;
     color:white;
     border:none;
+}
+ .update{
+    background-color:whitesmoke;
+    padding-left:35%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+                     
+     }
+.update a{
+    text-decoration: none;
+    font-family: monospace;
+    color:black;
+    display: block;
+    padding:10px;
+    font-size:25px;
 }
 .update a:hover{
     font-size: 30px;

@@ -7,13 +7,14 @@
         }
 .nav{top:0;
         position:sticky;
-        opacity: 0.9;}
+        opacity: 0.8;
+    overflow:visible;}
         ul {
             list-style: none;
             padding: 0;
             margin: 0px;
             background-color:white;
-            overflow:visible;
+            overflow:inherit;
             font-size: 20px;
             font-family:monospace;
             
@@ -71,11 +72,12 @@ ul:after { clear: both; }
 .btn2{
     background-color:white;
     color:black;
-    padding: 23px 23px;
+    padding: 17px 17px;
     margin-top: 0px 0px ;
     font-family: monospace;
     border: none;
     cursor: pointer;
+    font-size: 20px;
 }
 .btn2:hover{
     background-color:#909090;
@@ -84,11 +86,11 @@ ul:after { clear: both; }
 }
 .parallax {
     /* The image used */
-    background-image: url("19.jpg");
+    background-image: url("28.jpg");
 
     /* Set a specific height */
     min-height: 500px; 
-
+    
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -103,12 +105,24 @@ ul:after { clear: both; }
             padding-left: 15%;
             opacity:3;
             font-size:35px;
-            color:white;
+            color:black;
             font-family:cursive;
 }
 
 @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
+    ul li {
+        float: none;
         width: 100%;
     }
+    .nav{
+        position:static;
+    }
+     .video1 iframe{
+        width:100%;
+            height:200px;
+    }
+    .right{
+        float:left;
+    }
 }
+
