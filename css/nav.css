@@ -86,7 +86,7 @@ ul:after { clear: both; }
 }
 .parallax {
     /* The image used */
-    background-image: url("28.jpg");
+    background-image: url("30.jpg");
 
     /* Set a specific height */
     min-height: 500px; 
@@ -105,7 +105,7 @@ ul:after { clear: both; }
             padding-left: 15%;
             opacity:3;
             font-size:35px;
-            color:black;
+            color:black
             font-family:cursive;
 }
 
