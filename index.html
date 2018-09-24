@@ -24,19 +24,8 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 600px) {
-    ul li {
-        float: none;
-        width: 100%;
-    }
-    .nav{
-        position:static;
-    }
-    .video1 video{
-        width:100%;
-            height:auto;
-    }
-}
+
+   
          .footer{
             background-color:#303030;
             padding: 20px;
@@ -54,10 +43,16 @@
 <div class="nav">
 <ul class="main-navigation">
   <li><a href="magazine.html"><i class="fa fa-home"></i></a></li>
-    <li><a href="#"><i class="fa fa-search"></i></a></li>
-    <li><a href="css/gallery.html">GALLERY</a></li>
-    <li><a href="#">EVENTS</a></li>
-  <li><a href="#">PAPER</a>
+    <li><a href="http://www.mnnit.ac.in/#">MNNIT</a></li>
+    <li><a href="css/gallery.html">Gallery</a></li>
+    <li><a href="css/events.html">Events</a>
+     <ul>
+      <li><a href="#">Swagat</a></li>
+      <li><a href="#">Avishkar</a></li>
+      <li><a href="#">Atheltic Meet</a></li>
+        <li><a href="#">Culrav</a></li>
+    </ul></li>
+  <li><a href="#">Paper</a>
     <ul>
       <li><a href="css/1stYear.html">1st Year</a></li>
       <li><a href="#">CSE</a>
@@ -74,6 +69,7 @@
       </li>
     </ul>
   </li>
+    
  <div class="right">
     <button class="btn2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"> Login</button>
      <button class="btn2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> SignUp</button>
@@ -93,9 +89,10 @@
     </div>
 
     <div class="container">
+        <?php include('error.php'); ?>
         
     UserName<input type="text" name="name"  required><br>
-    E-mail <input type="text" name="email" required><br>
+    E-mail <input type="text" name="email"><br>
 
     Password <input type="password" name="pass1" required>
     <br><br>
@@ -103,9 +100,9 @@
     <br><br>
     <button class="btn1" type="submit" name="" value="Submit">Sign up</button>
     <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-          
+    <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+         
         
     </div>
 
@@ -171,10 +168,12 @@ window.onclick = function(event) {
 
 
     
-<div class="parallax">    <div class="home">           <span>COMING SOON...       </span>
-        <hr style="margin-left: 0%; width:50%">
-        <span style="font-size: 15px;"><p id="demo"></p></span>
-        <p id="demo" style="font-size:50px"></p>
+<div class="parallax">    <div class="home">
+    <span>We Are</span>
+    <span>Coming Soon...       </span>
+        <hr style="margin-left: 0%; width:50%;">
+        <span style="font-size: 20px;"><p id="demo"></p></span>
+        
         </div>
 </div>
 <div class="row2" >
@@ -202,56 +201,27 @@ window.onclick = function(event) {
         <div class="video1">
             
             
-            <video id="myVideo"  width="45%" muted autoplay >
-            <source src="mnnit.MP4" type="video/MP4">
-            </video>
-            <button id="myBtn" onclick="myFunction()">Pause</button>
-            <script>
-            var video1 = document.getElementById("myVideo");
-            var btn = document.getElementById("myBtn");
-
-            function myFunction() {
-              if (video1.paused) {
-                video1.play();
-                btn.innerHTML = "Pause";
-              } else {
-                video1.pause();
-                btn.innerHTML = "Play";
-              }
-            }
-           
-            </script>
-            <video id="MNNIT" width="45%"muted autoplay>
-            <source src="MNNIT.MKV" type="video/MP4">
-            </video>
-            <button id="myBtn2" onclick="myFunction2()">Pause</button>
-            <script>
-            var video = document.getElementById("MNNIT");
-            var btn1 = document.getElementById("myBtn2");
-
-            function myFunction2() {
-              if (video.paused) {
-                video.play();
-                btn1.innerHTML = "Pause";
-              } else {
-                video.pause();
-                btn1.innerHTML = "Play";
-              }
-            }</script>
+            <iframe width="45%" height="315" src="https://www.youtube.com/embed/Gyukj5kFqTs?rel=0&amp;controls=0&amp;showinfo=0&amp;start=9" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+           <iframe width="45%" height="315" src="https://www.youtube.com/embed/vahNWorUr80?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+            
         </div>
+
+
+</div>
         </div>
-        <br><br>
-    
-    <div class="update">  
+            <div class="update">  
             <h1 style="padding:10px;font-size: 32px;font-family: monospace;">Updates:</h1>
-            <a href="#">&#9679  Swagat18 photos</a>
+            <a href="#">&#9679  Swagat18 photos.</a>
             <a href="#">&#9679  Mid-sem schedule.</a>
             <a href="#">&#9679  Avishkar18.</a>
             <a href="#">&#9679  GnoTalks.</a>
-     </div> 
+</div>
     
+
+
     
-  </div>
 <div class="subscribe"><div class="sub">
     <h1 style="font-family: monospace">Contact us:</h1>
     <h2 style="font-family: monospace">@ 8058803260</h2>
