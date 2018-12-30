@@ -14,45 +14,35 @@
             float:left;
             overflow:inherit;
         }
-.row{   background-color:ghostwhite;
-}
+        .row{   background-color:ghostwhite;
+        }
 
         
         .column.right{
             width:25%;
             padding-left: 0px;
         }
-        .row:after{
-            content:"";
-            display:table;
-            clear:both;
-        }
+        
+        
         .card{
             background-color:ghostwhite;
-            margin-top:100px;
-            
-           
-    
+            margin-top:0px;
         }
+        .video1{
+            margin-left:10%;
+            height:auto;
+            padding-top: 0px; 
 
-
-
-.video1{
-    margin-left:10%;
-    height:auto;
-    padding-top: 100px; 
-    
-}
+        }
 
 .subscribe{
     background-image:url("18.jpg");
     min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
     background-attachment:local;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
     
     
 }
@@ -63,24 +53,22 @@
             color:white;
             
 }
-.row2{    background-color:darkgrey;
-            height:100%;
-            width=100%; 
+.row2{    background-color:red;
+            width:100%; 
             text-align: center;
-            margin-top: 0;
-            font-family: serif;
             font-size:20px;
             color:white;
         
 }
+
 .row2 a{
     text-decoration: none;
     color:white;
     font-family: monospace;
 }
 .E1{
+    float: left;
     margin-left:15%;
-    float:left;
     background-color:#808080;
     text-align: center;
     width:24%;
@@ -97,6 +85,11 @@
     text-align: center;
     width:24%;
 }
+.card:after{
+            content:"";
+            display:table;
+            clear:both;
+        }
 
 
 input[type=submit],input[type=email]{
@@ -109,7 +102,7 @@ input[type=submit],input[type=email]{
 }
 input[type=submit]{
     background-color:#757575;
-    font-size:25px;
+    font-size:20px;
     color:white;
     border:none;
 }
@@ -132,10 +125,4 @@ input[type=submit]{
     font-size: 30px;
 }
  
-
-.row:after{
-    content: "";
-    display: table;
-    clear:both;
-}
 
